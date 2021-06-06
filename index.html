@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Random password generate </title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="text-align: center;">
+	<h1>Click on the button Generate A password</h1>
+	<button onclick = "clickon()">Generate password</button>
+    <p id="id1"></p>
+    <script>
+    	var a =document.getElementById("id1");
+    	function clickon(){
+    		a.innerHTML= Math.random().toString(36).slice(2) +
+    		 Math.random().toString(36).toUpperCase().slice(2);}
+    </script>
+</body>
+</html>
